@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to - Cisca page</title>
+	<link rel="stylesheet" type="text/css" href="cisca.css">
+	<!-----BOX ICON ------ HEART ICON---->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+<!------------------------NAVBAR------------------------>
+	<header>
+		<a href="#" class="logo" style="background-color:black; color: white;"><i class="fa fa-heart" style="color: red;"></i>Cisca</a>
+
+		<ul class="navbar" style="background-color: lightgray;">
+			<li><a href="#home">Home</li>
+			<li><a href="#product">Products</li>
+			<li><a href="#home">Reviews</li>
+		</ul>
+
+
+		<!-----------------ICONS--------------------------->
+	<div class="header-icons" style="background-color: lightgray;">
+		<i class="fa fa-bars" id="menu-icon"></i>
+		<i class="fa fa-search" id="search-icon"></i>
+		<i class="fa fa-shopping-cart" id="cart-icon"></i>
+		
+	</div>
+
+
+
+	<!-----------------SEARCH BOX ---------------------------------->
+	<div class="search-box">
+		<input type="search" name="" id="" placeholder="Search Here...">
+	</div>
+
+	
+
+	<!-------USER ---------------->
+	
+	<!------------------------------END OF HEADER---------------------->
+	</header>
+
+	<!---------------------------------HOME---------------------------->
+	<section class="home" id="home">
+		<div class="home-text">
+			<span style="color: darkred;">Shop Now</span>
+			<h1>New Arrival of <br>Fresh Products</h1>
+			<a href="#" class="btn" style="background-color: black; color: red;">Shop Now</a>
+		</div>
+		<div class="home-img">
+			<img src="wallpaper.jpg" alt="">
+		</div>
+	</section>
+	<!--------------------NEW ARRIVALS----------------->
+	
+
+
+
+
+
+<section class="product" id="product">
+		<div class="heading">
+			<h1 style="color: black; font-weight: 700;">New <span style="color: red">Arrivals</span></h1>
+		</div>
+	</section>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img1.jpg" style="width:100%">
+    <img src="img2.jpg" style="width:100%">
+    <img src="img3.jpg" style="width:100%">
+    <img src="img4.jpg" style="width:100%">
+    <img src="img5.jpg" style="width:100%">
+    <img src="img6.jpg" style="width:100%">
+    <img src="img7.jpg" style="width:100%">
+  </div>
+
+  <div class="column">
+    <img src="img14.jpg" style="width:100%">
+    <img src="img15.jpg" style="width:100%">
+    <img src="img16.jpg" style="width:100%">
+    <img src="img17.jpg" style="width:100%">
+    <img src="img18.jpg" style="width:100%">
+    <img src="img19.jpg" style="width:100%">
+    <img src="img20.jpg" style="width:100%">
+  </div>
+  </div>
+</div>
+
+
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
+
+
+	<!-------------------END ARRIVALS ------------------>
+
+	<!---------------PRODUCTS----------------------->
+	<section class="product" id="product">
+		<div class="heading">
+			<h1 style="color: black;">Our <span style="color: red;">Product</span></h1>
+		</div>
+		<div class="product-container">
+			<div class="box">
+				<img src="img21.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span>50% discount</span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+
+			<div class="box">
+				<img src="img22.jpg" alt="">
+				<div class="content">
+					<h2>Buy from us</h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+
+			<div class="box">
+				<img src="img23.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+
+			<div class="box">
+				<img src="pro2.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+
+
+			<div class="box">
+				<img src="pro3.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="pro4.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="pro1.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="pro5.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img6.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img8.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img8.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+
+			<div class="box">
+				<img src="img9.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img10.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img11.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img12.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img13.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+
+			<div class="box">
+				<img src="img7.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+
+			<div class="box">
+				<img src="img1.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="thh.jpeg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="th.jpg" alt="">
+				<div class="content">
+					<h2></h2>
+
+					<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<span></span>
+					<i class="fa fa-shopping-cart"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-------------------------REVIEW----------------------->
+<section class="reviews" id="reviews">
+	<div class="heading">
+		<h1>Our <span>Customer's</span></h1>
+	</div>
+	<div class="reviews-container">
+		<div class="box">
+			<img src="scross.jpg" alt="">
+			<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+			</div>
+			<p>Everyone loved them. Exactly what I was looking for. Love the different size. Soft fabric. Made well</p>
+			<h2>Asumadu Kwabena Sakyi</h2>
+		</div>
+
+		<div class="box">
+			<img src="Vitara.jpg" alt="">
+			<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+			</div>
+			<p>Nice, good products</p>
+		
+		</div>
+
+		<div class="box">
+			<img src="baleno.jpg" alt="">
+			<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+			</div>
+			<p>These are so funny, they fit perfect and good quality</p>
+			
+		</div>
+
+		<div class="box">
+			<img src="wallpaper1.jpg" alt="">
+			<div class="stars">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+			</div>
+			<p>they fit perfect and good quality</p>
+			
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<!-------------------FOOTER----------------------------->
+<section class="footer">
+	<div class="footer-box">
+		<h2 style="color: dodgerblue;">Cisca</h2>
+		<p></p>
+
+		<div class="social">
+			<a href=""><i class="fa fa-facebook-f"></i></a>
+			<a href=""><i class="fa fa-twitter"></i></a>
+			<a href=""><i class="fa fa-whatsapp"></i></a>
+		</div>
+	</div>
+
+	<div class="footer-box">
+		<h3>About Us</h3>
+		<li><a href="about.html">About Us</li>
+		<li><a href="#">Join Our Whatsapp group</li>
+	</div>
+
+	<div class="footer-box">
+		<h3>Help</h3>
+		<li><a href="contact.html">Contact Us</li>
+	</div>
+
+	<div class="footer-box">
+		<h3>Payment Method</h3>
+		<div class="payment">
+			<img src="mom.jpeg">
+		</div>
+	</div>
+</section>
+
+
+<!----------------COPYRIGHT AT FOOTER--------->
+<div class="copyright">
+	<p>CiscaPage - 2023</p>
+</div>
+
+
+
+
+
+<!-------------Link to Javascript------------>
+<script src="script.js"></script>
+</body>
+</html>
